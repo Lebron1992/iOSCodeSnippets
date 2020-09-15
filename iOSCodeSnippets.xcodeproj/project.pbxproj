@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FDEE18BB251112BA0096E380 /* iOSCodeSnippets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDEE18B1251112BA0096E380 /* iOSCodeSnippets.framework */; };
-		FDEE18C0251112BA0096E380 /* iOSCodeSnippetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE18BF251112BA0096E380 /* iOSCodeSnippetsTests.swift */; };
 		FDEE18C2251112BA0096E380 /* iOSCodeSnippets.h in Headers */ = {isa = PBXBuildFile; fileRef = FDEE18B4251112BA0096E380 /* iOSCodeSnippets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDEE18CF251114630096E380 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE18CE251114630096E380 /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +27,8 @@
 		FDEE18B4251112BA0096E380 /* iOSCodeSnippets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSCodeSnippets.h; sourceTree = "<group>"; };
 		FDEE18B5251112BA0096E380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDEE18BA251112BA0096E380 /* iOSCodeSnippetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCodeSnippetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDEE18BF251112BA0096E380 /* iOSCodeSnippetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCodeSnippetsTests.swift; sourceTree = "<group>"; };
 		FDEE18C1251112BA0096E380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEE18CE251114630096E380 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +71,11 @@
 		FDEE18B3251112BA0096E380 /* iOSCodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
-				FDEE18B4251112BA0096E380 /* iOSCodeSnippets.h */,
+				FDEE18CD2511143E0096E380 /* CustomViews */,
+				FDEE18CB251113870096E380 /* Extensions */,
 				FDEE18B5251112BA0096E380 /* Info.plist */,
+				FDEE18B4251112BA0096E380 /* iOSCodeSnippets.h */,
+				FDEE18CC251114330096E380 /* Types */,
 			);
 			path = iOSCodeSnippets;
 			sourceTree = "<group>";
@@ -80,10 +83,55 @@
 		FDEE18BE251112BA0096E380 /* iOSCodeSnippetsTests */ = {
 			isa = PBXGroup;
 			children = (
-				FDEE18BF251112BA0096E380 /* iOSCodeSnippetsTests.swift */,
+				FDEE18D4251119AB0096E380 /* CustomViews */,
+				FDEE18D3251119A40096E380 /* Extensions */,
+				FDEE18D0251114BC0096E380 /* Types */,
 				FDEE18C1251112BA0096E380 /* Info.plist */,
 			);
 			path = iOSCodeSnippetsTests;
+			sourceTree = "<group>";
+		};
+		FDEE18CB251113870096E380 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FDEE18CC251114330096E380 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				FDEE18CE251114630096E380 /* App.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		FDEE18CD2511143E0096E380 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FDEE18D0251114BC0096E380 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		FDEE18D3251119A40096E380 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FDEE18D4251119AB0096E380 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +196,7 @@
 				TargetAttributes = {
 					FDEE18B0251112BA0096E380 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					FDEE18B9251112BA0096E380 = {
 						CreatedOnToolsVersion = 11.6;
@@ -195,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEE18CF251114630096E380 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDEE18C0251112BA0096E380 /* iOSCodeSnippetsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +389,7 @@
 		FDEE18C6251112BA0096E380 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PDS2N83HDN;
@@ -356,6 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lebron.iOSCodeSnippets;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +415,7 @@
 		FDEE18C7251112BA0096E380 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PDS2N83HDN;
@@ -388,6 +440,7 @@
 		FDEE18C9251112BA0096E380 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PDS2N83HDN;
 				INFOPLIST_FILE = iOSCodeSnippetsTests/Info.plist;
@@ -406,6 +459,7 @@
 		FDEE18CA251112BA0096E380 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PDS2N83HDN;
 				INFOPLIST_FILE = iOSCodeSnippetsTests/Info.plist;
