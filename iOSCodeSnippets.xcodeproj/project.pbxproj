@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FD1AA0D72517A41700B82042 /* AppleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1AA0D62517A41700B82042 /* AppleSignInManager.swift */; };
+		FD9C15EF25238658009D305D /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9C15EE25238658009D305D /* DictionaryExtensions.swift */; };
+		FD9C15F32523866B009D305D /* DictionaryExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9C15F22523866B009D305D /* DictionaryExtensionsTests.swift */; };
 		FDA97918251C298900A4478A /* AppleSignInManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA97917251C298900A4478A /* AppleSignInManagerTests.swift */; };
 		FDA9791D251C332400A4478A /* AuthorizationAppleIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA9791C251C332400A4478A /* AuthorizationAppleIDProvider.swift */; };
 		FDA97923251C354900A4478A /* MockAuthorizationAppleIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA97922251C354900A4478A /* MockAuthorizationAppleIDProvider.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		FD1AA0D62517A41700B82042 /* AppleSignInManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInManager.swift; sourceTree = "<group>"; };
+		FD9C15EE25238658009D305D /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		FD9C15F22523866B009D305D /* DictionaryExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionsTests.swift; sourceTree = "<group>"; };
 		FDA97917251C298900A4478A /* AppleSignInManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInManagerTests.swift; sourceTree = "<group>"; };
 		FDA9791C251C332400A4478A /* AuthorizationAppleIDProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAppleIDProvider.swift; sourceTree = "<group>"; };
 		FDA97922251C354900A4478A /* MockAuthorizationAppleIDProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthorizationAppleIDProvider.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 		FDEE18CB251113870096E380 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FD9C15EE25238658009D305D /* DictionaryExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 		FDEE18D3251119A40096E380 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FD9C15F22523866B009D305D /* DictionaryExtensionsTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 				FDEE18CF251114630096E380 /* App.swift in Sources */,
 				FDA9791D251C332400A4478A /* AuthorizationAppleIDProvider.swift in Sources */,
 				FD1AA0D72517A41700B82042 /* AppleSignInManager.swift in Sources */,
+				FD9C15EF25238658009D305D /* DictionaryExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +292,7 @@
 			files = (
 				FDA97923251C354900A4478A /* MockAuthorizationAppleIDProvider.swift in Sources */,
 				FDA97918251C298900A4478A /* AppleSignInManagerTests.swift in Sources */,
+				FD9C15F32523866B009D305D /* DictionaryExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
