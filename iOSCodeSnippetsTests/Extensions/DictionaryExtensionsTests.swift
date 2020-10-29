@@ -19,7 +19,7 @@ class DictionaryExtensionsTests: XCTestCase {
         super.tearDown()
     }
     
-    func testWithAllValuesFrom_addedAllGivenValuesToCaller() {
+    func testWithAllValuesFrom_addedAllGivenValuesToReceiver() {
         // given
         var dict1 = ["a": 1, "b": 2]
         let dict2 = ["c": 3, "d": 4]
@@ -31,7 +31,7 @@ class DictionaryExtensionsTests: XCTestCase {
         XCTAssertEqual(dict1, ["a": 1, "b": 2, "c": 3, "d": 4])
     }
     
-    func testWithAllValuesFrom_givenValuesOverrideCaller() {
+    func testWithAllValuesFrom_givenValuesOverrideReceiver() {
         // given
         var dict1 = ["a": 1, "b": 2]
         let dict2 = ["a": 3, "c": 4]
