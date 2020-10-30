@@ -10,6 +10,9 @@
 		FD1AA0D72517A41700B82042 /* AppleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1AA0D62517A41700B82042 /* AppleSignInManager.swift */; };
 		FD7D75E8254BEFE9001B818B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75E7254BEFE9001B818B /* StringExtensions.swift */; };
 		FD7D75EC254BEFFC001B818B /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75EB254BEFFC001B818B /* StringExtensionsTests.swift */; };
+		FD7D75F0254BF1E1001B818B /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75EF254BF1E1001B818B /* UIAlertControllerExtensions.swift */; };
+		FD7D75F4254BF297001B818B /* UICollectionViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75F3254BF297001B818B /* UICollectionViewCellExtensions.swift */; };
+		FD7D75F8254BF2AC001B818B /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75F7254BF2AC001B818B /* UIColorExtensions.swift */; };
 		FD9AD673254B14F10093DD8F /* NSErrorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AD672254B14F10093DD8F /* NSErrorExtensionsTests.swift */; };
 		FD9AD677254B156A0093DD8F /* ErrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AD676254B156A0093DD8F /* ErrorExtensions.swift */; };
 		FD9AD67B254B18B50093DD8F /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AD67A254B18B50093DD8F /* OptionalExtensions.swift */; };
@@ -40,6 +43,9 @@
 		FD1AA0D62517A41700B82042 /* AppleSignInManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInManager.swift; sourceTree = "<group>"; };
 		FD7D75E7254BEFE9001B818B /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		FD7D75EB254BEFFC001B818B /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
+		FD7D75EF254BF1E1001B818B /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
+		FD7D75F3254BF297001B818B /* UICollectionViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExtensions.swift; sourceTree = "<group>"; };
+		FD7D75F7254BF2AC001B818B /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		FD9AD672254B14F10093DD8F /* NSErrorExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtensionsTests.swift; sourceTree = "<group>"; };
 		FD9AD676254B156A0093DD8F /* ErrorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorExtensions.swift; sourceTree = "<group>"; };
 		FD9AD67A254B18B50093DD8F /* OptionalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
@@ -145,6 +151,9 @@
 				FDE520C025245BCB007DB247 /* IntExtensions.swift */,
 				FD9AD67A254B18B50093DD8F /* OptionalExtensions.swift */,
 				FD7D75E7254BEFE9001B818B /* StringExtensions.swift */,
+				FD7D75EF254BF1E1001B818B /* UIAlertControllerExtensions.swift */,
+				FD7D75F3254BF297001B818B /* UICollectionViewCellExtensions.swift */,
+				FD7D75F7254BF2AC001B818B /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -307,6 +316,9 @@
 				FDE520C125245BCB007DB247 /* IntExtensions.swift in Sources */,
 				FDEE18CF251114630096E380 /* App.swift in Sources */,
 				FD9AD67B254B18B50093DD8F /* OptionalExtensions.swift in Sources */,
+				FD7D75F4254BF297001B818B /* UICollectionViewCellExtensions.swift in Sources */,
+				FD7D75F0254BF1E1001B818B /* UIAlertControllerExtensions.swift in Sources */,
+				FD7D75F8254BF2AC001B818B /* UIColorExtensions.swift in Sources */,
 				FD9AD677254B156A0093DD8F /* ErrorExtensions.swift in Sources */,
 				FDA9791D251C332400A4478A /* AuthorizationAppleIDProvider.swift in Sources */,
 				FD1AA0D72517A41700B82042 /* AppleSignInManager.swift in Sources */,

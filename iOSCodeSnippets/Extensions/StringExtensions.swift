@@ -12,7 +12,7 @@ extension String {
 // MARK: - Methods
 extension String {
     func trim() -> String {
-        return trimmingCharacters(in: .whitespacesAndNewlines)
+        trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }
 
