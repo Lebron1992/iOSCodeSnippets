@@ -7,5 +7,7 @@ target 'iOSCodeSnippets' do
   use_frameworks!
 
   pod 'AlamofireImage'
+  pod 'PKHUD'
+  pod 'SwiftEntryKit'
 
 end

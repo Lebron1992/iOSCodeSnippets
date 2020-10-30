@@ -11,6 +11,6 @@ extension UIFont {
     }
 
     static func Forza(style: ForzaFontStyle, size: CGFloat) -> UIFont {
-        return UIFont(name: style.rawValue, size: size)!
+        UIFont(name: style.rawValue, size: size)!
     }
 }
