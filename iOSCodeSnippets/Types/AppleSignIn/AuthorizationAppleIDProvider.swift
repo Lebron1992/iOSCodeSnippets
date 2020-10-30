@@ -9,6 +9,7 @@
 import AuthenticationServices
 import Foundation
 
+@available(iOS 13.0, *)
 public protocol AuthorizationAppleIDProvider {
     
     func createRequest() -> ASAuthorizationAppleIDRequest
@@ -19,5 +20,6 @@ public protocol AuthorizationAppleIDProvider {
     )
 }
 
+@available(iOS 13.0, *)
 extension ASAuthorizationAppleIDProvider: AuthorizationAppleIDProvider {
 }

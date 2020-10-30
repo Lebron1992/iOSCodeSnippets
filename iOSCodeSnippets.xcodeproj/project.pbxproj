@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B7AA54F145465B51918C910 /* Pods_iOSCodeSnippets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C59F5A69D9C0115F984845F /* Pods_iOSCodeSnippets.framework */; };
 		FD1AA0D72517A41700B82042 /* AppleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1AA0D62517A41700B82042 /* AppleSignInManager.swift */; };
 		FD7D75E8254BEFE9001B818B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75E7254BEFE9001B818B /* StringExtensions.swift */; };
 		FD7D75EC254BEFFC001B818B /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75EB254BEFFC001B818B /* StringExtensionsTests.swift */; };
 		FD7D75F0254BF1E1001B818B /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75EF254BF1E1001B818B /* UIAlertControllerExtensions.swift */; };
 		FD7D75F4254BF297001B818B /* UICollectionViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75F3254BF297001B818B /* UICollectionViewCellExtensions.swift */; };
 		FD7D75F8254BF2AC001B818B /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75F7254BF2AC001B818B /* UIColorExtensions.swift */; };
+		FD7D75FC254BF40B001B818B /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75FB254BF40B001B818B /* UIDeviceExtensions.swift */; };
+		FD7D7600254BF67A001B818B /* UIScreenExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75FF254BF67A001B818B /* UIScreenExtensions.swift */; };
+		FD7D7604254BF6BD001B818B /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D7603254BF6BD001B818B /* UIFontExtensions.swift */; };
+		FD7D7608254C05D0001B818B /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D7607254C05D0001B818B /* UIImageExtensions.swift */; };
+		FD7D760C254C062A001B818B /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D760B254C062A001B818B /* UIImageViewExtensions.swift */; };
 		FD9AD673254B14F10093DD8F /* NSErrorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AD672254B14F10093DD8F /* NSErrorExtensionsTests.swift */; };
 		FD9AD677254B156A0093DD8F /* ErrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AD676254B156A0093DD8F /* ErrorExtensions.swift */; };
 		FD9AD67B254B18B50093DD8F /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AD67A254B18B50093DD8F /* OptionalExtensions.swift */; };
@@ -40,12 +46,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E47657113268E5F855BD7E3 /* Pods-iOSCodeSnippets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCodeSnippets.debug.xcconfig"; path = "Target Support Files/Pods-iOSCodeSnippets/Pods-iOSCodeSnippets.debug.xcconfig"; sourceTree = "<group>"; };
+		20D10BAEB91F9760FEA0F528 /* Pods-iOSCodeSnippets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCodeSnippets.release.xcconfig"; path = "Target Support Files/Pods-iOSCodeSnippets/Pods-iOSCodeSnippets.release.xcconfig"; sourceTree = "<group>"; };
+		3C59F5A69D9C0115F984845F /* Pods_iOSCodeSnippets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSCodeSnippets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1AA0D62517A41700B82042 /* AppleSignInManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInManager.swift; sourceTree = "<group>"; };
 		FD7D75E7254BEFE9001B818B /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		FD7D75EB254BEFFC001B818B /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
 		FD7D75EF254BF1E1001B818B /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
 		FD7D75F3254BF297001B818B /* UICollectionViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExtensions.swift; sourceTree = "<group>"; };
 		FD7D75F7254BF2AC001B818B /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		FD7D75FB254BF40B001B818B /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
+		FD7D75FF254BF67A001B818B /* UIScreenExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreenExtensions.swift; sourceTree = "<group>"; };
+		FD7D7603254BF6BD001B818B /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		FD7D7607254C05D0001B818B /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		FD7D760B254C062A001B818B /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		FD9AD672254B14F10093DD8F /* NSErrorExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSErrorExtensionsTests.swift; sourceTree = "<group>"; };
 		FD9AD676254B156A0093DD8F /* ErrorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorExtensions.swift; sourceTree = "<group>"; };
 		FD9AD67A254B18B50093DD8F /* OptionalExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B7AA54F145465B51918C910 /* Pods_iOSCodeSnippets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98D2A403AEB1C905F5620D4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E47657113268E5F855BD7E3 /* Pods-iOSCodeSnippets.debug.xcconfig */,
+				20D10BAEB91F9760FEA0F528 /* Pods-iOSCodeSnippets.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DEE6C3AF565334C1572AE250 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C59F5A69D9C0115F984845F /* Pods_iOSCodeSnippets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDA9791B251C32FA00A4478A /* AppleSignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +140,8 @@
 				FDEE18B3251112BA0096E380 /* iOSCodeSnippets */,
 				FDEE18BE251112BA0096E380 /* iOSCodeSnippetsTests */,
 				FDEE18B2251112BA0096E380 /* Products */,
+				98D2A403AEB1C905F5620D4F /* Pods */,
+				DEE6C3AF565334C1572AE250 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +188,11 @@
 				FD7D75EF254BF1E1001B818B /* UIAlertControllerExtensions.swift */,
 				FD7D75F3254BF297001B818B /* UICollectionViewCellExtensions.swift */,
 				FD7D75F7254BF2AC001B818B /* UIColorExtensions.swift */,
+				FD7D75FB254BF40B001B818B /* UIDeviceExtensions.swift */,
+				FD7D75FF254BF67A001B818B /* UIScreenExtensions.swift */,
+				FD7D7603254BF6BD001B818B /* UIFontExtensions.swift */,
+				FD7D7607254C05D0001B818B /* UIImageExtensions.swift */,
+				FD7D760B254C062A001B818B /* UIImageViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -219,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDEE18C5251112BA0096E380 /* Build configuration list for PBXNativeTarget "iOSCodeSnippets" */;
 			buildPhases = (
+				D0421ED5F72D91B0DC7BC074 /* [CP] Check Pods Manifest.lock */,
 				FDEE18AC251112BA0096E380 /* Headers */,
 				FDEE18AD251112BA0096E380 /* Sources */,
 				FDEE18AE251112BA0096E380 /* Frameworks */,
@@ -258,7 +298,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = Lebron;
 				TargetAttributes = {
 					FDEE18B0251112BA0096E380 = {
@@ -307,12 +347,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D0421ED5F72D91B0DC7BC074 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSCodeSnippets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDEE18AD251112BA0096E380 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FD7D75E8254BEFE9001B818B /* StringExtensions.swift in Sources */,
+				FD7D75FC254BF40B001B818B /* UIDeviceExtensions.swift in Sources */,
+				FD7D760C254C062A001B818B /* UIImageViewExtensions.swift in Sources */,
+				FD7D7604254BF6BD001B818B /* UIFontExtensions.swift in Sources */,
 				FDE520C125245BCB007DB247 /* IntExtensions.swift in Sources */,
 				FDEE18CF251114630096E380 /* App.swift in Sources */,
 				FD9AD67B254B18B50093DD8F /* OptionalExtensions.swift in Sources */,
@@ -320,7 +388,9 @@
 				FD7D75F0254BF1E1001B818B /* UIAlertControllerExtensions.swift in Sources */,
 				FD7D75F8254BF2AC001B818B /* UIColorExtensions.swift in Sources */,
 				FD9AD677254B156A0093DD8F /* ErrorExtensions.swift in Sources */,
+				FD7D7600254BF67A001B818B /* UIScreenExtensions.swift in Sources */,
 				FDA9791D251C332400A4478A /* AuthorizationAppleIDProvider.swift in Sources */,
+				FD7D7608254C05D0001B818B /* UIImageExtensions.swift in Sources */,
 				FD1AA0D72517A41700B82042 /* AppleSignInManager.swift in Sources */,
 				FD9C15EF25238658009D305D /* DictionaryExtensions.swift in Sources */,
 			);
@@ -377,6 +447,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -402,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -440,6 +511,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -459,7 +531,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -473,6 +545,7 @@
 		};
 		FDEE18C6251112BA0096E380 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E47657113268E5F855BD7E3 /* Pods-iOSCodeSnippets.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +572,7 @@
 		};
 		FDEE18C7251112BA0096E380 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D10BAEB91F9760FEA0F528 /* Pods-iOSCodeSnippets.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
