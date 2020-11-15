@@ -38,7 +38,6 @@ final class PageMenuView: UIView {
     init(frame: CGRect, tabTitles: [String]) {
         self.tabTitles = tabTitles
         super.init(frame: frame)
-        backgroundColor = .appRed
         configSubviews()
     }
 

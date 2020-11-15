@@ -7,9 +7,8 @@ final class PubNubManager {
     static let shared = PubNubManager()
 
     private let pubnub: PubNub = {
-        // TODO: update isStaging and subscribeKey
-        let isStaging = true
-        let subscribeKey = isStaging ? "" : ""
+        // TODO: update subscribeKey
+        let subscribeKey = ""
         let pubnubConfig = PubNubConfiguration(
             publishKey: nil,
             subscribeKey: subscribeKey

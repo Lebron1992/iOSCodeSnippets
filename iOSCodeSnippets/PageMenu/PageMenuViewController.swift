@@ -1,6 +1,6 @@
 import UIKit
 
-class PageMenuViewController: BaseViewController {
+class PageMenuViewController: UIViewController {
 
     // MARK: - Views
 
@@ -11,6 +11,7 @@ class PageMenuViewController: BaseViewController {
     private(set) lazy var pageMenuView: PageMenuView = {
         let menu = PageMenuView(frame: .zero, tabTitles: tabTitles)
         menu.delegate = self
+        menu.backgroundColor = pageMenuViewBackgroundColor()
         return menu
     }()
 
@@ -63,6 +64,10 @@ class PageMenuViewController: BaseViewController {
 
     func tabTitlesForMenu() -> [String] {
         return []
+    }
+    
+    func pageMenuViewBackgroundColor() -> UIColor {
+        .red
     }
 
     func viewControllerForTabWithTitle(_ title: String) -> UIViewController? {
