@@ -37,6 +37,24 @@ extension UIView {
             }
         }
     }
+    
+    func removeAllConstraints() {
+        var _superview = superview
+
+        while let superview = _superview {
+            for constraint in superview.constraints {
+                if let first = constraint.firstItem as? UIView, first == self {
+                    superview.removeConstraint(constraint)
+                }
+                if let second = constraint.secondItem as? UIView, second == self {
+                    superview.removeConstraint(constraint)
+                }
+            }
+            _superview = superview.superview
+        }
+
+        removeConstraints(constraints)
+    }
 }
 
 // MARK: - Corner & Border
@@ -320,6 +338,148 @@ extension UIView {
         border.backgroundColor = color
         border.alpha = alpha
         return border
+    }
+}
+
+// MARK: - Add Inner Shadow
+extension UIView {
+    enum innerShadowSide {
+        case all, left, right, top, bottom, topAndLeft,
+        topAndRight, bottomAndLeft, bottomAndRight,
+        exceptLeft, exceptRight, exceptTop, exceptBottom
+    }
+
+    // define function to add inner shadow
+    // swiftlint:disable function_body_length
+    func addInnerShadow(
+        onSide: innerShadowSide,
+        shadowColor: UIColor,
+        shadowSize: CGFloat,
+        cornerRadius: CGFloat = 0.0,
+        shadowOpacity: Float
+    ) -> CAShapeLayer {
+        // define and set a shaow layer
+        let shadowLayer = CAShapeLayer()
+        shadowLayer.frame = bounds
+        shadowLayer.shadowColor = shadowColor.cgColor
+        shadowLayer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        shadowLayer.shadowOpacity = shadowOpacity
+        shadowLayer.shadowRadius = shadowSize
+        shadowLayer.cornerRadius = cornerRadius
+        shadowLayer.fillRule = CAShapeLayerFillRule.evenOdd
+
+        // define shadow path
+        let shadowPath = CGMutablePath()
+
+        // define outer rectangle to restrict drawing area
+        let insetRect = bounds.insetBy(dx: -shadowSize * 2.0, dy: -shadowSize * 2.0)
+
+        // define inner rectangle for mask
+        let innerFrame: CGRect = { () -> CGRect in
+            switch onSide {
+            case .all:
+                return CGRect(x: 0.0, y: 0.0, width: frame.width, height: frame.height)
+            case .left:
+                return CGRect(
+                    x: 0.0,
+                    y: -shadowSize * 2.0,
+                    width: frame.width + shadowSize * 2.0,
+                    height: frame.height + shadowSize * 4.0
+                )
+            case .right:
+                return CGRect(
+                    x: -shadowSize * 2.0,
+                    y: -shadowSize * 2.0,
+                    width: frame.width + shadowSize * 2.0,
+                    height: frame.height + shadowSize * 4.0
+                )
+            case .top:
+                return CGRect(
+                    x: -shadowSize * 2.0,
+                    y: 0.0,
+                    width: frame.width + shadowSize * 4.0,
+                    height: frame.height + shadowSize * 2.0
+                )
+            case.bottom:
+                return CGRect(
+                    x: -shadowSize * 2.0,
+                    y: -shadowSize * 2.0,
+                    width: frame.width + shadowSize * 4.0,
+                    height: frame.height + shadowSize * 2.0
+                )
+            case .topAndLeft:
+                return CGRect(
+                    x: 0.0,
+                    y: 0.0,
+                    width: frame.width + shadowSize * 2.0,
+                    height: frame.height + shadowSize * 2.0
+                )
+            case .topAndRight:
+                return CGRect(
+                    x: -shadowSize * 2.0,
+                    y: 0.0,
+                    width: frame.width + shadowSize * 2.0,
+                    height: frame.height + shadowSize * 2.0
+                )
+            case .bottomAndLeft:
+                return CGRect(
+                    x: 0.0,
+                    y: -shadowSize * 2.0,
+                    width: frame.width + shadowSize * 2.0,
+                    height: frame.height + shadowSize * 2.0
+                )
+            case .bottomAndRight:
+                return CGRect(
+                    x: -shadowSize * 2.0,
+                    y: -shadowSize * 2.0,
+                    width: frame.width + shadowSize * 2.0,
+                    height: frame.height + shadowSize * 2.0
+                )
+            case .exceptLeft:
+                return CGRect(
+                    x: -shadowSize * 2.0,
+                    y: 0.0,
+                    width: frame.width + shadowSize * 2.0,
+                    height: frame.height
+                )
+            case .exceptRight:
+                return CGRect(
+                    x: 0.0,
+                    y: 0.0,
+                    width: frame.width + shadowSize * 2.0,
+                    height: frame.height
+                )
+            case .exceptTop:
+                return CGRect(
+                    x: 0.0,
+                    y: -shadowSize * 2.0,
+                    width: frame.width,
+                    height: frame.height + shadowSize * 2.0
+                )
+            case .exceptBottom:
+                return CGRect(
+                    x: 0.0,
+                    y: 0.0,
+                    width: frame.width,
+                    height: frame.height + shadowSize * 2.0
+                )
+            }
+        }()
+
+        // add outer and inner rectangle to shadow path
+        shadowPath.addRect(insetRect)
+        shadowPath.addRect(innerFrame)
+
+        // set shadow path as show layer's
+        shadowLayer.path = shadowPath
+
+        // add shadow layer as a sublayer
+        layer.addSublayer(shadowLayer)
+
+        // hide outside drawing area
+        clipsToBounds = true
+
+        return shadowLayer
     }
 }
 

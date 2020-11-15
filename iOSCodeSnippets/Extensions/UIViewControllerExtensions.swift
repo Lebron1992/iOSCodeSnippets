@@ -24,6 +24,17 @@ extension UIViewController {
     @objc func viewDidTapped() {
         view.endEditing(true)
     }
+    
+    // MARK: - Dismiss View Controller
+
+    func dismissViewWhenTappedAround(cancelTouches: Bool = false) {
+        let tap = UITapGestureRecognizer(
+            target: self,
+            action: #selector(closeButtonItemTapped)
+        )
+        tap.cancelsTouchesInView = cancelTouches
+        view.addGestureRecognizer(tap)
+    }
 
     // MARK: - Navigation Bar
 
