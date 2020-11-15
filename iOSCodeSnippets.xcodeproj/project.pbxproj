@@ -25,6 +25,8 @@
 		FD1A75E225614B7D0065D0C6 /* ValueCellDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A75DF25614B7D0065D0C6 /* ValueCellDataSource.swift */; };
 		FD1A75E325614B7D0065D0C6 /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A75E025614B7D0065D0C6 /* ListDataSource.swift */; };
 		FD1A75E425614B7D0065D0C6 /* ValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A75E125614B7D0065D0C6 /* ValueCell.swift */; };
+		FD1A75F425617B780065D0C6 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A75F325617B780065D0C6 /* ListViewModel.swift */; };
+		FD1A75F825617C740065D0C6 /* DotRectPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A75F725617C740065D0C6 /* DotRectPageControl.swift */; };
 		FD1AA0D72517A41700B82042 /* AppleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1AA0D62517A41700B82042 /* AppleSignInManager.swift */; };
 		FD7D75E8254BEFE9001B818B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75E7254BEFE9001B818B /* StringExtensions.swift */; };
 		FD7D75EC254BEFFC001B818B /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7D75EB254BEFFC001B818B /* StringExtensionsTests.swift */; };
@@ -88,6 +90,8 @@
 		FD1A75DF25614B7D0065D0C6 /* ValueCellDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueCellDataSource.swift; sourceTree = "<group>"; };
 		FD1A75E025614B7D0065D0C6 /* ListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
 		FD1A75E125614B7D0065D0C6 /* ValueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueCell.swift; sourceTree = "<group>"; };
+		FD1A75F325617B780065D0C6 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		FD1A75F725617C740065D0C6 /* DotRectPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotRectPageControl.swift; sourceTree = "<group>"; };
 		FD1AA0D62517A41700B82042 /* AppleSignInManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInManager.swift; sourceTree = "<group>"; };
 		FD7D75E7254BEFE9001B818B /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		FD7D75EB254BEFFC001B818B /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
@@ -189,6 +193,14 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		FD1A75F225617B6F0065D0C6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A75F325617B780065D0C6 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		FDA9791B251C32FA00A4478A /* AppleSignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +242,7 @@
 		FDEE18B3251112BA0096E380 /* iOSCodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				FD1A75F225617B6F0065D0C6 /* ViewModels */,
 				FD1A75DE25614B720065D0C6 /* DataSource */,
 				FD1A7568256140110065D0C6 /* PageMenu */,
 				FDA9791B251C32FA00A4478A /* AppleSignIn */,
@@ -296,6 +309,7 @@
 				FD1A75352561367F0065D0C6 /* BidirectionLoadingCollectionView.swift */,
 				FD1A75362561367F0065D0C6 /* BidirectionLoadingTableView.swift */,
 				FD1A7541256136E50065D0C6 /* ColorableNavigationController.swift */,
+				FD1A75F725617C740065D0C6 /* DotRectPageControl.swift */,
 				FD1A7545256138520065D0C6 /* InteractivePopGestureNavigationController.swift */,
 				FD1A7549256138750065D0C6 /* PaddingLabel.swift */,
 				FD1A754D256138850065D0C6 /* WebViewController.swift */,
@@ -483,6 +497,7 @@
 				FD1A750A25612C400065D0C6 /* PubNubManager.swift in Sources */,
 				FD1A752E256134140065D0C6 /* BaseCollectionViewCell.swift in Sources */,
 				FD7D762A254C08A2001B818B /* UIViewControllerExtensions.swift in Sources */,
+				FD1A75F825617C740065D0C6 /* DotRectPageControl.swift in Sources */,
 				FD1A756D256140190065D0C6 /* PageContentCollectionViewCell.swift in Sources */,
 				FD7D75F8254BF2AC001B818B /* UIColorExtensions.swift in Sources */,
 				FD9AD677254B156A0093DD8F /* ErrorExtensions.swift in Sources */,
@@ -494,6 +509,7 @@
 				FD7D7608254C05D0001B818B /* UIImageExtensions.swift in Sources */,
 				FD1A75382561367F0065D0C6 /* BidirectionLoadingTableView.swift in Sources */,
 				FD1A75372561367F0065D0C6 /* BidirectionLoadingCollectionView.swift in Sources */,
+				FD1A75F425617B780065D0C6 /* ListViewModel.swift in Sources */,
 				FD1AA0D72517A41700B82042 /* AppleSignInManager.swift in Sources */,
 				FD9C15EF25238658009D305D /* DictionaryExtensions.swift in Sources */,
 				FD1A750B25612C400065D0C6 /* PubNubMessageChannel.swift in Sources */,
