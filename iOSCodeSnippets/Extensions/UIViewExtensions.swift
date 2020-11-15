@@ -37,7 +37,10 @@ extension UIView {
             }
         }
     }
+}
 
+// MARK: - Corner & Border
+extension UIView {
     func roundCorners(corners: UIRectCorner, radius: CGFloat) {
         let path = UIBezierPath(
             roundedRect: bounds,
@@ -48,8 +51,6 @@ extension UIView {
         mask.path = path.cgPath
         layer.mask = mask
     }
-
-    // MARK: - Borders
 
     enum ViewSide {
         case top
@@ -322,6 +323,22 @@ extension UIView {
     }
 }
 
+// MARK: - Take Screenshot
+extension UIView {
+    func toImage() -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(bounds.size, false, 0)
+        defer {
+            UIGraphicsEndImageContext()
+        }
+        guard let context = UIGraphicsGetCurrentContext() else {
+            return nil
+        }
+        layer.render(in: context)
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
+}
+
+// MARK: - Cross Dissolve
 func crossDissolve(_ view: UIView, show: Bool, completion: (() -> Void)? = nil) {
     view.alpha = show ? 0 : 1
     UIView.animate(withDuration: 0.25) {
