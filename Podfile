@@ -8,6 +8,7 @@ target 'iOSCodeSnippets' do
 
   pod 'AlamofireImage'
   pod 'PKHUD'
+  pod 'PubNubSwift'
   pod 'SwiftEntryKit'
 
 end
