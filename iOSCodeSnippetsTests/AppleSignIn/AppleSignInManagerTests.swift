@@ -10,6 +10,7 @@ import AuthenticationServices
 import XCTest
 @testable import iOSCodeSnippets
 
+@available(iOS 13, *)
 class AppleSignInManagerTests: XCTestCase {
     
     var mockProvider: MockAuthorizationAppleIDProvider!

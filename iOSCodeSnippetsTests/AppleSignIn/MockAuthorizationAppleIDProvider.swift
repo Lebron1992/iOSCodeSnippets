@@ -10,6 +10,7 @@ import AuthenticationServices
 import Foundation
 @testable import iOSCodeSnippets
 
+@available(iOS 13, *)
 final class MockAuthorizationAppleIDProvider: AuthorizationAppleIDProvider {
     
     private var validateStateBlock: ((ASAuthorizationAppleIDProvider.CredentialState, Error?) -> Void)?
