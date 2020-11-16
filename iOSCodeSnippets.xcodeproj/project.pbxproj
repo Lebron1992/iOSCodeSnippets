@@ -52,6 +52,9 @@
 		FDA97918251C298900A4478A /* AppleSignInManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA97917251C298900A4478A /* AppleSignInManagerTests.swift */; };
 		FDA9791D251C332400A4478A /* AuthorizationAppleIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA9791C251C332400A4478A /* AuthorizationAppleIDProvider.swift */; };
 		FDA97923251C354900A4478A /* MockAuthorizationAppleIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA97922251C354900A4478A /* MockAuthorizationAppleIDProvider.swift */; };
+		FDC38CE125620614007ED6F7 /* ContactExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC38CE025620614007ED6F7 /* ContactExtensions.swift */; };
+		FDC38CE52562064C007ED6F7 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC38CE42562064C007ED6F7 /* DoubleExtensions.swift */; };
+		FDC38CE9256206B7007ED6F7 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC38CE8256206B7007ED6F7 /* EncodableExtensions.swift */; };
 		FDE520C125245BCB007DB247 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE520C025245BCB007DB247 /* IntExtensions.swift */; };
 		FDE520C525245BE3007DB247 /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE520C425245BE3007DB247 /* IntExtensionsTests.swift */; };
 		FDEE18BB251112BA0096E380 /* iOSCodeSnippets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDEE18B1251112BA0096E380 /* iOSCodeSnippets.framework */; };
@@ -117,6 +120,9 @@
 		FDA97917251C298900A4478A /* AppleSignInManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInManagerTests.swift; sourceTree = "<group>"; };
 		FDA9791C251C332400A4478A /* AuthorizationAppleIDProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAppleIDProvider.swift; sourceTree = "<group>"; };
 		FDA97922251C354900A4478A /* MockAuthorizationAppleIDProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthorizationAppleIDProvider.swift; sourceTree = "<group>"; };
+		FDC38CE025620614007ED6F7 /* ContactExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactExtensions.swift; sourceTree = "<group>"; };
+		FDC38CE42562064C007ED6F7 /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		FDC38CE8256206B7007ED6F7 /* EncodableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
 		FDE520C025245BCB007DB247 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		FDE520C425245BE3007DB247 /* IntExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionsTests.swift; sourceTree = "<group>"; };
 		FDEE18B1251112BA0096E380 /* iOSCodeSnippets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSCodeSnippets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,7 +276,10 @@
 		FDEE18CB251113870096E380 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FDC38CE025620614007ED6F7 /* ContactExtensions.swift */,
 				FD9C15EE25238658009D305D /* DictionaryExtensions.swift */,
+				FDC38CE42562064C007ED6F7 /* DoubleExtensions.swift */,
+				FDC38CE8256206B7007ED6F7 /* EncodableExtensions.swift */,
 				FD9AD676254B156A0093DD8F /* ErrorExtensions.swift */,
 				FDE520C025245BCB007DB247 /* IntExtensions.swift */,
 				FD9AD67A254B18B50093DD8F /* OptionalExtensions.swift */,
@@ -477,12 +486,14 @@
 				FD1A75322561342E0065D0C6 /* BaseNavigationController.swift in Sources */,
 				FD1A751A25612E690065D0C6 /* Notifications.swift in Sources */,
 				FD7D75E8254BEFE9001B818B /* StringExtensions.swift in Sources */,
+				FDC38CE52562064C007ED6F7 /* DoubleExtensions.swift in Sources */,
 				FD7D763E254C62A7001B818B /* UIViewExtensions.swift in Sources */,
 				FD7D75FC254BF40B001B818B /* UIDeviceExtensions.swift in Sources */,
 				FD7D760C254C062A001B818B /* UIImageViewExtensions.swift in Sources */,
 				FD7D7604254BF6BD001B818B /* UIFontExtensions.swift in Sources */,
 				FDE520C125245BCB007DB247 /* IntExtensions.swift in Sources */,
 				FD1A756C256140190065D0C6 /* PageMenuViewController.swift in Sources */,
+				FDC38CE125620614007ED6F7 /* ContactExtensions.swift in Sources */,
 				FDEE18CF251114630096E380 /* App.swift in Sources */,
 				FD1A75E425614B7D0065D0C6 /* ValueCell.swift in Sources */,
 				FD7D761E254C079E001B818B /* UITableViewExtensions.swift in Sources */,
@@ -503,6 +514,7 @@
 				FD9AD677254B156A0093DD8F /* ErrorExtensions.swift in Sources */,
 				FD7D7600254BF67A001B818B /* UIScreenExtensions.swift in Sources */,
 				FD1A756E256140190065D0C6 /* PageMenuView.swift in Sources */,
+				FDC38CE9256206B7007ED6F7 /* EncodableExtensions.swift in Sources */,
 				FD1A75E225614B7D0065D0C6 /* ValueCellDataSource.swift in Sources */,
 				FDA9791D251C332400A4478A /* AuthorizationAppleIDProvider.swift in Sources */,
 				FD1A75E325614B7D0065D0C6 /* ListDataSource.swift in Sources */,
