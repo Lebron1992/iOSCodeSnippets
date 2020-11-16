@@ -55,6 +55,10 @@
 		FDC38CE125620614007ED6F7 /* ContactExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC38CE025620614007ED6F7 /* ContactExtensions.swift */; };
 		FDC38CE52562064C007ED6F7 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC38CE42562064C007ED6F7 /* DoubleExtensions.swift */; };
 		FDC38CE9256206B7007ED6F7 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC38CE8256206B7007ED6F7 /* EncodableExtensions.swift */; };
+		FDC38CF1256207D2007ED6F7 /* CalendarMonthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC38CED256207D1007ED6F7 /* CalendarMonthHeaderView.swift */; };
+		FDC38CF2256207D2007ED6F7 /* CalendarConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC38CEE256207D1007ED6F7 /* CalendarConstants.swift */; };
+		FDC38CF3256207D2007ED6F7 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC38CEF256207D1007ED6F7 /* CalendarViewController.swift */; };
+		FDC38CF4256207D2007ED6F7 /* CalendarDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC38CF0256207D2007ED6F7 /* CalendarDateCollectionViewCell.swift */; };
 		FDE520C125245BCB007DB247 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE520C025245BCB007DB247 /* IntExtensions.swift */; };
 		FDE520C525245BE3007DB247 /* IntExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE520C425245BE3007DB247 /* IntExtensionsTests.swift */; };
 		FDEE18BB251112BA0096E380 /* iOSCodeSnippets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDEE18B1251112BA0096E380 /* iOSCodeSnippets.framework */; };
@@ -123,6 +127,10 @@
 		FDC38CE025620614007ED6F7 /* ContactExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactExtensions.swift; sourceTree = "<group>"; };
 		FDC38CE42562064C007ED6F7 /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		FDC38CE8256206B7007ED6F7 /* EncodableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
+		FDC38CED256207D1007ED6F7 /* CalendarMonthHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarMonthHeaderView.swift; sourceTree = "<group>"; };
+		FDC38CEE256207D1007ED6F7 /* CalendarConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarConstants.swift; sourceTree = "<group>"; };
+		FDC38CEF256207D1007ED6F7 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		FDC38CF0256207D2007ED6F7 /* CalendarDateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateCollectionViewCell.swift; sourceTree = "<group>"; };
 		FDE520C025245BCB007DB247 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		FDE520C425245BE3007DB247 /* IntExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionsTests.swift; sourceTree = "<group>"; };
 		FDEE18B1251112BA0096E380 /* iOSCodeSnippets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSCodeSnippets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +233,17 @@
 			path = AppleSignIn;
 			sourceTree = "<group>";
 		};
+		FDC38CEC256207C7007ED6F7 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FDC38CEE256207D1007ED6F7 /* CalendarConstants.swift */,
+				FDC38CF0256207D2007ED6F7 /* CalendarDateCollectionViewCell.swift */,
+				FDC38CED256207D1007ED6F7 /* CalendarMonthHeaderView.swift */,
+				FDC38CEF256207D1007ED6F7 /* CalendarViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		FDEE18A7251112BA0096E380 = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +267,7 @@
 		FDEE18B3251112BA0096E380 /* iOSCodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				FDC38CEC256207C7007ED6F7 /* Calendar */,
 				FD1A75F225617B6F0065D0C6 /* ViewModels */,
 				FD1A75DE25614B720065D0C6 /* DataSource */,
 				FD1A7568256140110065D0C6 /* PageMenu */,
@@ -486,6 +506,7 @@
 				FD1A75322561342E0065D0C6 /* BaseNavigationController.swift in Sources */,
 				FD1A751A25612E690065D0C6 /* Notifications.swift in Sources */,
 				FD7D75E8254BEFE9001B818B /* StringExtensions.swift in Sources */,
+				FDC38CF3256207D2007ED6F7 /* CalendarViewController.swift in Sources */,
 				FDC38CE52562064C007ED6F7 /* DoubleExtensions.swift in Sources */,
 				FD7D763E254C62A7001B818B /* UIViewExtensions.swift in Sources */,
 				FD7D75FC254BF40B001B818B /* UIDeviceExtensions.swift in Sources */,
@@ -514,12 +535,15 @@
 				FD9AD677254B156A0093DD8F /* ErrorExtensions.swift in Sources */,
 				FD7D7600254BF67A001B818B /* UIScreenExtensions.swift in Sources */,
 				FD1A756E256140190065D0C6 /* PageMenuView.swift in Sources */,
+				FDC38CF1256207D2007ED6F7 /* CalendarMonthHeaderView.swift in Sources */,
 				FDC38CE9256206B7007ED6F7 /* EncodableExtensions.swift in Sources */,
 				FD1A75E225614B7D0065D0C6 /* ValueCellDataSource.swift in Sources */,
 				FDA9791D251C332400A4478A /* AuthorizationAppleIDProvider.swift in Sources */,
 				FD1A75E325614B7D0065D0C6 /* ListDataSource.swift in Sources */,
 				FD7D7608254C05D0001B818B /* UIImageExtensions.swift in Sources */,
+				FDC38CF2256207D2007ED6F7 /* CalendarConstants.swift in Sources */,
 				FD1A75382561367F0065D0C6 /* BidirectionLoadingTableView.swift in Sources */,
+				FDC38CF4256207D2007ED6F7 /* CalendarDateCollectionViewCell.swift in Sources */,
 				FD1A75372561367F0065D0C6 /* BidirectionLoadingCollectionView.swift in Sources */,
 				FD1A75F425617B780065D0C6 /* ListViewModel.swift in Sources */,
 				FD1AA0D72517A41700B82042 /* AppleSignInManager.swift in Sources */,

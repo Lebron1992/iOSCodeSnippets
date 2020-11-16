@@ -7,6 +7,7 @@ target 'iOSCodeSnippets' do
   use_frameworks!
 
   pod 'AlamofireImage'
+  pod 'JTAppleCalendar'
   pod 'PKHUD'
   pod 'PubNubSwift'
   pod 'ReactiveSwift'
