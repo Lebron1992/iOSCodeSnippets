@@ -1,6 +1,19 @@
 import UIKit
 
 extension UIDevice {
+    
+    static var isPhone: Bool {
+        UIDevice.current.userInterfaceIdiom == .phone
+    }
+    
+    static var isPad: Bool {
+        UIDevice.current.userInterfaceIdiom == .pad
+    }
+    
+    static var isSimulator: Bool {
+        TARGET_OS_SIMULATOR != 0
+    }
+    
     static var deviceId: String {
         UIDevice.current.identifierForVendor?.uuidString ?? ""
     }

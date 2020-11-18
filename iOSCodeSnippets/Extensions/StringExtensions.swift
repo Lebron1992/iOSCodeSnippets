@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 // MARK: - Properties
 extension String {
@@ -51,6 +52,22 @@ extension String {
     static func random(length: Int) -> String {
       let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
       return String((0..<length).map { _ in letters.randomElement()! })
+    }
+}
+
+extension String {
+    func boundingRect(
+        with size: CGSize,
+        options: NSStringDrawingOptions,
+        attributes: [NSAttributedString.Key: Any]?,
+        context: NSStringDrawingContext?
+    ) -> CGRect {
+        (self as NSString).boundingRect(
+            with: size,
+            options: options,
+            attributes: attributes,
+            context: context
+        )
     }
 }
 

@@ -24,9 +24,9 @@ class OptionalExtensionsTests: XCTestCase {
         XCTAssertTrue(nilValue.isNil)
     }
     
-    func test_isNotNil() {
+    func test_isSome() {
         let nilValue: String? = "string"
-        XCTAssertTrue(nilValue.isNotNil)
+        XCTAssertTrue(nilValue.isSome)
     }
     
     func test_doIfSome_bodyGetCalled() {

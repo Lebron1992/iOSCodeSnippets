@@ -57,6 +57,16 @@ extension UIView {
     }
 }
 
+extension UIView {
+    func reverseSubviews() {
+        let count = subviews.count
+        for i in 0 ..< count {
+            let subview = subviews[count - 1 - i]
+            bringSubviewToFront(subview)
+        }
+    }
+}
+
 // MARK: - Corner & Border
 extension UIView {
     func roundCorners(corners: UIRectCorner, radius: CGFloat) {

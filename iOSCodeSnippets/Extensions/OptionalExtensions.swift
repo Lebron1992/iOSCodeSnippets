@@ -5,7 +5,7 @@ extension Optional {
         self == nil
     }
 
-    var isNotNil: Bool {
+    var isSome: Bool {
         isNil == false
     }
 

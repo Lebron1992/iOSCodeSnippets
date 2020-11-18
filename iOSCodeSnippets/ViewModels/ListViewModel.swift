@@ -48,9 +48,6 @@ class ListViewModel<ItemType: ListItemType> {
         viewDidLoadProperty.value = ()
     }
 
-    // We have to move the initializations of the request-related properties to subclasses,
-    // because apiService is changed when user session is changed
-
     var isRefreshing: Signal<Bool, Never>!
     var isBottomLoading: Signal<Bool, Never>!
     var itemClicked: Signal<ItemType, Never>

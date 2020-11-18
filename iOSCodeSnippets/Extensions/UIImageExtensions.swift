@@ -46,6 +46,20 @@ extension UIImage {
         let resized = UIGraphicsGetImageFromCurrentImageContext()
         return resized ?? self
     }
+    
+    func resizeToWidth(_ width: CGFloat) -> UIImage? {
+        let height = (width * size.height) / size.width
+        let aspectSize = CGSize(width: width, height: height)
+        
+        UIGraphicsBeginImageContext(aspectSize)
+        defer {
+            UIGraphicsEndImageContext()
+        }
+        
+        draw(in: .init(origin: .zero, size: aspectSize))
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        return img
+    }
 }
 
 // MARK: - Rotate
